@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Process API</title>
+</head>
+
+<body>
+    <p>Use this to create a path to add new process to ENV file map</p>
+    <form id="create-form">
+        <input id="proc" placeholder="process" required><br><br>
+        <input id="key" placeholder="key" required>
+        <input id="value" placeholder="value" required>
+        <button>Create</button>
+    </form>
+    <br><p id="messageOne"></p><br>
+
+    <p>Use this to get the environment variable for your process.</p>
+
+    <form id="get-form">
+        <input id="process" placeholder="process" required>
+        <button>Search</button>
+    </form>
+
+    <p id="messageTwo"></p>
+
+    <script src="/js/index.js"></script>
+
+</body>
+
+</html>
