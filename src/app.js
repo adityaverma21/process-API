@@ -2,6 +2,7 @@ const path = require('path')
 const express = require('express')
 const fs = require('fs')
 
+
 const app = express()
 const port = process.env.PORT || 3000
 
@@ -13,7 +14,7 @@ app.post('/setEnv/:process/:key/:value', async(req, res) => {
         const process = req.params.process
         const key = req.params.key
         const value = req.params.value
-        
+        const process1;
         
        const data = {
            [key]: value
